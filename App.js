@@ -40,4 +40,4 @@ const ok = React.createElement("div",{id:"box"},[
   React.createElement("div",{id:"box2"},React.createElement("h1",{},"Aye hello"))
 ])
 
-root.render(ok)
+root.render(ok) 
