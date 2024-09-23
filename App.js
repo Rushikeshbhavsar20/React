@@ -74,7 +74,7 @@ const Component3 = () => (
 //with {} we have to define return compulsory
 const Component4 = () => {
  return  <div className="composition">
-          <Component/>
+          <Component></Component>
           <h1> this is react </h1> 
    </div>
  
@@ -84,26 +84,33 @@ const Component4 = () => {
 const Componet = () =>  <h1> this is react </h1> ;
 
 
-
-const Component5 = () => (
-  <div className="composition">
-          <Component/>
-          <h1> this is react </h1> 
-   </div>
- 
+//js code inside a jsx
+const a = 100;
+const Testingjava = (
+    <h1>{a} </h1>
 );
 
 
+//react element inside a component
 
+const Elm_inside_com = () => {
+  return <div className="eio">
+         {Testingjava}
+  </div>
+}
 
+//react element inside a element
 
+const elem_inside_elem = (
+    <h1> ok , {Testingjava} </h1>
 
+);
 
-
-
-
-
+//Different types to write a react component 
+//<Component4/>
+//<Component4></Component4>
+//{Component()}
 console.log(Componet)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Componet/>);
+root.render(Component4());
