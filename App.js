@@ -114,3 +114,5 @@ console.log(Componet)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(Component4());
+
+///edited by the linux machine
